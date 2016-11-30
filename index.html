@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>SF Maps</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="vendor/colorbrewer/colorbrewer.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="vendor/d3.min.js" charset="utf-8"></script>
+  <script src="vendor/topojson.js" charset="utf-8"></script>
+  <script src="vendor/d3-queue.js"></script>
+  <script src="vendor/d3-legend.js"></script>
+  <script src="js/choropleth.js"></script>
+</head>
+
+<body>
+    <div class="half">
+      <div id="map_container"></div>
+    </div>
+    <div class="half">
+      <p id="data-select">
+        Data File:
+        <select id="example-data"></select>
+      </p>
+      <p>
+        Categories:
+        <select id="src-data"></select>
+      </p>
+      <p>
+        Buckets:
+        <select id="buckets"></select>
+      </p>
+      <p>
+        Color Scheme:
+        <select id="color-scheme"></select>
+      </p>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
